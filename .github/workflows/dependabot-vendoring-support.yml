@@ -12,7 +12,7 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
       - name: npx my-precious and build archived-packages
-      -  run: echo " ${{ github.actor }}"
+      - run: echo " ${{ github.actor }}"
       - run: git checkout ${{ github.head_ref }}
       - run: git remote set-url origin https://x-access-token:${{github.token}}@github.com/${{github.repository}}.git
       - run: |
